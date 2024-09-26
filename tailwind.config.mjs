@@ -11,6 +11,7 @@ export default {
     		},
     		colors: {
 				bgColor: "#fffff9",
+				lightGreen: "#8fac5f",
 				textColor: "#516244",
     			background: 'hsl(var(--background))',
     			foreground: 'hsl(var(--foreground))',
