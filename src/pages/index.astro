@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import AnimatedSection from '../components/AnimatedSection';
 import '@/styles/global.css'
 
 const sections = [
@@ -13,10 +12,11 @@ const sections = [
 
 <Layout title="NoWaste">
 	<main class="min-h-screen flex flex-col overflow-y-auto">
-		<header class="p-5 fixed top-0 left-0 right-0 bg-white z-10">
+		<header class="p-5 fixed top-0 left-0 right-0 bg-white z-50 flex justify-between shadow-lg">
 			<div class="ml-10">
-				<img src="../../nowaste-monografia.png" alt="Your Logo" class="h-8" />
+				<img src="../../nowaste-monografia.png" alt="Your Logo" class="h-8 " />
 			</div>
+			<button>Log In</button>
 		</header>
 
 		<section id="home" class="min-h-screen flex flex-col pt-20 place-content-center">
@@ -43,9 +43,16 @@ const sections = [
 		</section>
 
 		<section id="about" class="min-h-screen flex items-center bg-lightGreen">
-			<div class="container mx-auto px-4 text-center text-white">
-				<h2 class="text-4xl md:text-5xl font-bold mb-4">Sobre nosotros</h2>
-				<p class="text-xl md:text-2xl mb-8">Somos 5 chicos</p>
+			<div class="w-full h-[550px] mx-3 px-4 text-center text-black grid grid-cols-3 space-x-5">
+				<div class="z-0 place-content-center text-white space-y-4">
+					<h3 class="text-left text-5xl font-extrabold">Sobre Nowaste</h3>
+					<p class="text-left text-xl">NoWaste es una empresa comprometida con la sostenibilidad y la lucha contra el desperdicio de alimentos. 
+						Enfrentamos el problema de productos alimenticios que están cerca del final de su vida útil y no llegan a 
+						venderse por los canales tradicionales, aún siendo perfectamente consumibles.
+					</p>
+				</div>
+				<div class="z-10 place-content-center bg-white rounded-2xl shadow-lg shadow-textColor ">b</div>
+				<div class="z-20 place-content-center bg-white rounded-2xl shadow-lg shadow-textColor">c</div>
 			</div>
 		</section>
 
@@ -74,7 +81,7 @@ const sections = [
 			</div>
 		</section>
 
-		<footer class="p-5 fixed rounded-full shadow-lg bottom-3 left-1/2 transform -translate-x-1/2 bg-white z-10">
+		<footer class="p-5 fixed rounded-full shadow-lg bottom-3 left-1/2 transform -translate-x-1/2 bg-white z-50">
 			<div class="container mx-auto flex justify-center gap-4">
 				<a href="#home" class="text-gray-400 hover:text-gray-600 ">
 					Principal
